@@ -9,3 +9,6 @@ Developed a Gujarat Tourism website using MEAN Stack .
 4. File Upload has been implemented using Express and Node JS which allows users to upload their government ID using a form and the ID is stored in the uploads folder.
 5. User can add To Do List in the text editor implemented using AngularJS.
 6. For booking tickets user have to signup if new user otherwise if already existing user can login. Login and signup pages have been integerated with a backend using MongoDB and mongoose and the details of the user are validated during login.
+
+-> The screenshots folder contains the screenshots of each webpage in the website.
+

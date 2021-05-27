@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+ <html>
+   <title>Gujarat Tourism</title>
+   <link rel="stylesheet" href="home.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+  <body ng-app>
+  <nav class="{{active}}">
+  <h1><img src="logo.png">Vibrant Gujarat</h1>
+  <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="destsearch.html">Destinations</a></li>
+  <li><a href="texteditormain.html">Things To Do</a></li>
+  <li><a href="#about">Festivals</a></li>
+  <li><a href="#about">Accomodation</a></li>
+  <li><a href="destination.html">Top 6 Destinations</a></li>
+  <li><a href="http://localhost:3000/login">Book Tickets</a></li>
+</ul>
+
+ <center>
+ <div class="slideshow">
+  <img class="mySlides" src="ranutsav.jpg">
+  <img class="mySlides" src="Rann.jpg">
+  <img class="mySlides" src="Sabarmati.jpg">
+   <img class="mySlides" src="statue.jpg">
+ </div>
+ <p style="font-size:15px"><a id="video" href="video.html"><b><u>Virtual Tour Of Gujarat</u></b></p>
+ </center>
+ 
+ <script>
+   var myIndex = 0;
+   show();
+
+   function show() {
+     var i;
+     var x = document.getElementsByClassName("mySlides");
+     for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+     }
+     myIndex++;
+     if (myIndex > x.length) {myIndex = 1}
+     x[myIndex-1].style.display = "block";
+     setTimeout(show, 3000);
+   }
+</script>
+ </body>
+ </html>

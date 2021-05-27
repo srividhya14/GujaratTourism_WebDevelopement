@@ -1,0 +1,164 @@
+<html >
+<head>
+    <title>Destinations in Gujarat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="destsearch.css">
+    <style type="text/css">
+        .bar
+        {
+            box-shadow: 0 1px 1px #ccc;
+            border-radius: 2px;
+            width: 100%;
+            padding: 5px;
+            margin: 45px auto 25px;
+            position: relative;
+            text-align: right;
+            line-height: 1;
+        }
+        .bar a
+        {
+            background: #4987a1 center center no-repeat;
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            text-decoration: none !important;
+            margin-right: 20px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        .bar a.list-icon{
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkYzNkFCQ0ZBMTBCRTExRTM5NDk4RDFEM0E5RkQ1NEZCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkYzNkFCQ0ZCMTBCRTExRTM5NDk4RDFEM0E5RkQ1NEZCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjM2QUJDRjgxMEJFMTFFMzk0OThEMUQzQTlGRDU0RkIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RjM2QUJDRjkxMEJFMTFFMzk0OThEMUQzQTlGRDU0RkIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7h1bLqAAAAWUlEQVR42mL8////BwYGBn4GCACxBRlIAIxAA/4jaXoPEkMyjJ+A/g9MDJQBRhYg8RFqMwg8RJIUINYLFDmBUi+ADQAF1n8ofk9yIAy6WPg4GgtDMRYAAgwAdLYwLAoIwPgAAAAASUVORK5CYII=);
+}
+
+.bar a.grid-icon{
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjBEQkMyQzE0MTBCRjExRTNBMDlGRTYyOTlBNDdCN0I4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjBEQkMyQzE1MTBCRjExRTNBMDlGRTYyOTlBNDdCN0I4Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MERCQzJDMTIxMEJGMTFFM0EwOUZFNjI5OUE0N0I3QjgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MERCQzJDMTMxMEJGMTFFM0EwOUZFNjI5OUE0N0I3QjgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4MjPshAAAAXklEQVR42mL4////h/8I8B6IGaCYKHFGEMnAwCDIAAHvgZgRyiZKnImBQsACxB+hNoDAQyQ5osQZIT4gH1DsBZABH6AB8x/JaQzEig++WPiII7Rxio/GwmCIBYAAAwAwVIzMp1R0aQAAAABJRU5ErkJggg==);
+}
+
+        .bar a.active
+        {
+            background-color: #c14694;
+        }
+
+        /*------List layout------*/
+        ul.list
+        {
+            list-style: none;
+            width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        ul.list li
+        {
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+            overflow: hidden;
+        }
+        ul.list li img
+        {
+            float: left;
+            border: none;
+            padding-right:10px;
+
+
+        }
+        ul.list li p
+        {
+            margin-left: 135px;
+            font-weight: bold;
+            color: #6e7a7f;
+        }
+        #dataname1{
+           font-size:25px;
+           color:black;
+           padding-left:10px;
+
+
+        }
+        #dataname2,#dataname3{
+
+           padding-left:20px;
+
+
+        }
+        #tbx{
+           text-align:right;
+           font-size:22px;
+
+        }
+        .boxed {
+             border: 1.5px solid orange ;
+             width:75%;
+             height:600px;
+
+        }
+        .n{
+          font-size:60px;
+          color:orange;
+          font-weight: bold;
+          padding-left:10px;
+        }
+        .na{
+          font-size:30px;
+          font-weight:bold;
+          padding-left:5px;
+        }
+        #listimg{
+          padding-left:25px;
+        }
+       #unity{
+         width:85em;
+         height:25em;
+       }
+
+
+    </style>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+    <script type="text/javascript">
+        var app = angular.module("MyApp", []);
+          angular.module('MyApp', []).controller("MyController", function($scope) {
+           $scope.message="Top 5 Destinations to Visit"
+            $scope.layout = 'grid';
+            $scope.Data = [
+                {num:"01", Name:"Ahmedabad",path:"ahm.jpg",desc:"Ahmedabad, also known as the 'Manchester of India' is an apt weekend destination amongst tourists who want to unwind themselves amidst nature and capture the beautiful essence of Gujarat. Ahmedabad is the western India's most vibrant city known for its cotton industries mushrooming into the cities and its cotton products burgeoning across India."},
+                {num:"02", Name: "Surat",path:"surat.jpg",desc:"Surat, often called the Diamond City, for it has been the trade centre for diamonds for centuries! The city sparkles with its natural beauty, the hot springs, temples, tree-lined roads and access to some of the most beautiful beaches."},
+                {num:"03", Name: "Silvassa",path:"sil.jpg",desc:"Silvassa is extremely renowned for its exotic resorts, lush greenery, manufacturing industries and tax-free alcohol. It is also a haven for those looking for handmade and originally crafted products like Warli painting and paper bag."},
+                {num:"04", Name: "Vadodra",path:"vad.jpg",desc:"Known all over the world for its magnificent palaces, glorious past, and rich culture, the beautiful city of Vadodara happens to be one of the top places to visit in Gujarat for a peaceful and tranquilizing holiday."},
+                {num:"05", Name: "Kutch",path:"kutch.jpg",desc:"If you are looking for places to visit in Gujarat, then Kutch is the crème de la crème of the places you would want to explore. The architectural grandeur, cultural marvel, and sumptuous cuisine are bound to make it difficult for you to leave."},
+                {num:"06", Name: "Rajkot",path:"raj.jpg",desc:"The entire city of Rajkot reverberates colonial vibes. Most of the architecture reflects Anglo Indian styles of construction. The elaborate parks, lush green gardens, towering buildings, and museums beautify Rajkot further.."},
+                {num:"07", Name: "Gandhinagar",path:"gandh.jpg",desc:"Situated on the west coast of Sabarmati River, this city was named after the great freedom fighter and Father of The Nation of India, Mohandas Karamchand Gandhi. Located 32km to the north of Ahmedabad, Gandhinagar is the epitome of rich cultural heritage."},
+                {num:"08", Name: "Gir Somnath",path:"som.jpg",desc:"Gir and Somnath have a distinctly unique beauty. While Somnath’s location next to the Arabian Sea adds richness to its landscape, Gir’s tropical forest cover lends a luxuriant and verdant charm looking like a sea of green extending across endless miles."},
+                {num:"09", Name: "Saputara",path:"sap.jpg",desc:"Saputara is a tourist destination situated in the Dang district of Gujarat. It offers a spectacular view of the Western Ghats residing amid the undulating mountains at a distance of 250 km from Mumbai, and 4 km from the Mumbai border. Being the only hill station in Gujarat, it is located at a height of 1,000 meters and attracts tourists, especially during the summers. ."},
+                {num:"10", Name: "Jamnagar",path:"jam.jpg",desc:"Located in the Saurashtra region of Gujarat, Jamnagar is one of the most stunning places to visit in Gujarat. This commercially developed city offers several tourist attractions and entertainment options. The town is known primarily for the oil generation here by the Reliance industries. Moreover, its location to the south of the Gulf of Kutch also makes it a favorable tourist, commercial, and industrial destination."},
+                ];
+        });
+    </script>
+
+</head>
+<body bgcolor=white>
+  <div class="container">
+  <img id="unity" src="12.jpg" alt="Staue Of Unity">
+  <div class="text-block">
+     <h1 id="head">Places To Visit in Gujarat</h1>
+  </div>
+  </div>
+  <div ng-app="MyApp" ng-controller="MyController">
+  <p id="tbx">Search:<input type="text" ng-model="test"></p>
+  <ul style="list-style-type: none;">
+  <li>
+
+
+
+          <li ng-repeat="data in Data| filter : test">
+                 <div class="boxed">
+                  <p><span class="n">{{data.num}}</span><span class="na">{{data.Name}}</span></p>
+                  <img id="listimg" ng-src="{{data.path}}" height="400px" width=80% />
+
+                  <p id="dataname2">{{data.desc}}</p>
+
+              </div>
+              <br>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {margin:0;}
+#video:link {
+  color:#ff7a00;
+  text-decoration: none;
+}
+#video:visited {
+  color:#ff7a00;
+  text-decoration: none;
+}
+#video:hover {
+  color:#ff7a00;
+
+  text-decoration: underline;
+}
+#video:active {
+  color: yellow;
+  text-decoration: underline;
+}
+h1{
+  top:1.5%;
+}
+img{
+  height:45px;
+  width:45px;
+}
+ul {
+  top:20;
+  position:fixed;
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  float:left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #f37121;
+}
+figure {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+figcaption {
+  position: absolute;
+  background: rgba(0,0,0,0.75);
+  color: black;
+  padding: 10px 20px;
+}
+.mySlides {
+ width: 100%;
+ height:500px;
+ background-size: 100% 100%;
+ z-index:1;
+}

@@ -1,0 +1,119 @@
+<html>  
+  <head>  
+    <title>File upload</title> 
+  <style>
+
+    body{
+    /*background-image:url("uploadb.jpg");*/
+    /*background-image: url("upimg.jpg");*/
+    background-color:#d7a9d7;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.frame{
+    height:350px;
+    width:450px;
+    border: 2px solid black;
+    padding-left: 2%;
+    margin-left:440px;
+    margin-top:80px;
+    padding-top:1%;
+    background-color: powderblue;
+    font-weight: bold;
+
+}
+#sub{
+  margin-left:23%;
+  margin-top:8%;
+  border: black solid 1px;
+  font-size: medium;
+  font-weight: bold;
+}
+#sub1{
+  margin-left:2%;
+  border: black solid 1px;
+  font-size: medium;
+  font-weight: bold;
+}
+#fil{
+  padding-top:1%;
+  font-size: medium;
+  
+}
+
+  </style>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>  
+  <script>  
+  $(document).ready(function() {  
+     $('#uploadForm').submit(function() {  
+         $("#status").empty().text("File is uploading...");  
+  
+        $(this).ajaxSubmit({  
+  
+            error: function(xhr) {  
+                  console.log(chr.status);
+                  //status('Error: ' + xhr.status);  
+            },  
+  
+            success: function(response) {  
+                    console.log(response); 
+                    $("#status").empty().text(response);  
+            }  
+    });  
+  
+    return false;  
+    });      
+});  
+  </script>  
+  </head>
+
+<body>
+     
+      <h1><center>Gujarat Tourism</center></h1>  
+      <div class="frame">
+      <form name="myForm" id="uploadForm" enctype="multipart/form-data" action="http://localhost:2000/uploadjavatpoint" method="post">  
+        <p>Enter Your Name:<input type="text" id="name" name="fname" required></p>
+        <p>Enter Your Mobile Number:<input type="number" name="mob" required></p>
+        <p>Enter Age:<input type="number" name="age" required></p>
+        <p>Enter Number of Persons:<input type="number" name="nop" required></p>
+        <p>Upload Government ID proof:<input type="file" id="fil" name="myfile" required /></p>
+        <input type="submit" id="sub" value="Upload Image" name="submit"> 
+        <input type="submit" id="sub1" value="Submit" onclick="validateForm()"><br>
+       <p><span id="status"></span></p>
+       
+      </form> 
+      </div> 
+      <script>
+        function validateForm() {
+          var x = document.forms["myForm"]["fname"].value;
+          var flag=true;
+          if (x == "") {
+            alert("Name must be filled out");
+            flag=false;
+          }
+          var a= document.forms["myForm"]["mob"].value;
+          if (a == "") {
+            alert("Mobile Number must be filled out");
+            flag=false;
+          }
+          var b= document.forms["myForm"]["age"].value;
+          if (b == "") {
+            alert("Age must be filled out");
+            flag=false;
+          }
+          var c= document.forms["myForm"]["nop"].value;
+          if (c == "") {
+            alert("Number of Persons must be filled out");
+            flag=false;
+          }
+          if(flag)
+          {
+            alert("Your Details Are Submitted Successfully");
+          }
+          
+        }
+        </script>
+</body>  
+
+</html>

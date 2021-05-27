@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="ticket.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<h2 id="heading"><center>Entry Ticket(s) Booking</center></h2>
+
+
+
+<div class="row">
+  <div class="column3" style="background: rgba(0, 0,0,0.1);">
+  <p id="visitor">Visitor Details</p>
+  <p id="ad">Number Of Adults: <input type="number" id="adult" min="1" max="10" required></p>
+  <p id="ch">Number Of Children: <input type="number" id="child" min="0" max="10" id="child" required></p><br>
+  <p id="cost">Total Cost:<span id="totalsum"></span></p>
+  </div>
+
+ <div class="column1" style="background:rgba(0, 0,0.1,0.2);">
+   <p id="monum">Monuments</p>
+   <input type="checkbox" id="place1" name="place1" onclick="myfunc()"><span id="pl1">Asokan Rock Edict, Junagadh (INR25/-)</span></input><br>
+    <input type="checkbox" id="place2" name="place2" onclick="myfunc()"><span id="pl1">Archaeological Site Museum, Dholavira (INR5/-)</span></input><br>
+   <input type="checkbox" id="place3" name="place3" onclick="myfunc()"><span id="pl1">Archaeological Site Museum, Lothal (INR2/-)</span></input><br>
+   <input type="checkbox" id="place4" name="place4" onclick="myfunc()"><span id="pl1">Baba Pyare, Khaprakodia Caves (INR20/-)</span></input><br>
+   <input type="checkbox" id="place5" name="place5" onclick="myfunc()"><span id="pl1">Buddhish Caves, Junagadh (INR25/-)</span></input><br>
+   <input type="checkbox" id="place6" name="place6" onclick="myfunc()"><span id="pl1">Champaner Monuments (INR5/-)</span></input><br>
+    <input type="checkbox" id="place7" name="place7" onclick="myfunc()"><span id="pl1">Rani Ki-Vav (INR5/-)</span></input><br>
+      <input type="checkbox" id="place8" name="place8" onclick="myfunc()"><span id="pl1">Rudabai Step Well, Adalaj (INR25/-)</span></input><br>
+    <input type="checkbox" id="place9" name="place9" onclick="myfunc()"><span id="pl1">Modhera Sun Temple (INR20/-)</span></input><br>
+   <p id="note1">(Note:Per person charges given)</p>
+  </div>
+
+  <div class="column2" style="background:rgba(0, 0,0,0.1);">
+  <p id="date3">Select Monuments to Proceed</p>
+   <p id="s" style="display:none"></p><br>
+   <span id="id1" style="display:none">Date Of Visit:</span>
+   <input type="date" id="dov1" name="dov1" min="2021-03-01" max="2021-04-01" style="display:none"></input><br>
+   <p id="s1" style="display:none"></p><br>
+   <span id="id2" style="display:none">Date Of Visit:</span>
+   <input type="date" id="dov2" name="dov2" min="2021-03-01" max="2021-04-01" style="display:none"></input><br>
+  <p id="s2" style="display:none"></p><br>
+  <span id="idd3" style="display:none">Date Of Visit:</span>
+  <input type="date" id="dov3" name="dov3" min="2021-03-01" max="2021-04-01" style="display:none"></input><br>
+  <p id="s3" style="display:none"></p><br>
+  <span id="id4" style="display:none">Date Of Visit:</span>
+  <input type="date" id="dov4" name="dov4" min="2021-03-01" max="2021-04-01" style="display:none"></input><br>
+  <p id="s4" style="display:none"></p><br>
+  <span id="id5" style="display:none">Date Of Visit:</span>
+  <input type="date" id="dov5" name="dov5" min="2021-03-01" max="2021-04-01" style="display:none"></input><br>
+  <p id="s5" style="display:none"></p><br>
+  <span id="id6" style="display:none">Date Of Visit:</span>
+  <input type="date" id="dov6" name="dov6" min="2021-03-01" max="2021-04-01" style="display:none"></input><br>
+  <p id="s6" style="display:none"></p><br>
+  <span id="id7" style="display:none">Date Of Visit:</span>
+  <input type="date" id="dov7" name="dov7" min="2021-03-01" max="2021-04-01" style="display:none"></input><br>
+  <p id="s7" style="display:none"></p><br>
+  <span id="id8" style="display:none">Date Of Visit:</span>
+  <input type="date" id="dov8" name="dov8" min="2021-03-01" max="2021-04-01" style="display:none"></input><br>
+  <p id="s8" style="display:none"></p><br>
+  <span id="id9" style="display:none">Date Of Visit:</span>
+  <input type="date" id="dov9" name="dov9" min="2021-03-01" max="2021-04-01" style="display:none"></input><br>
+
+   </div>
+
+
+</div>
+<script>
+function myfunc()
+{
+  var sum=0;
+
+  var check1 = document.getElementById("place1");
+   var check2 = document.getElementById("place2");
+   var check3 = document.getElementById("place3");
+    var check4 = document.getElementById("place4");
+     var check5 = document.getElementById("place5");
+     var check6 = document.getElementById("place6");
+     var check7 = document.getElementById("place7");
+     var check8 = document.getElementById("place8");
+     var check9 = document.getElementById("place9");
+
+   var x=document.getElementById("adult").value;
+
+
+
+  if (check1.checked == true){
+    sum+=25;
+    document.getElementById("s").innerHTML ="Asokan Rock Edict";
+    document.getElementById("s").style.display ="inline";
+      document.getElementById("id1").style.display ="inline";
+    document.getElementById("dov1").style.display ="inline";
+
+   }
+  else {
+     document.getElementById("s").style.display = "none";
+     document.getElementById("dov1").style.display ="none";
+     document.getElementById("id1").style.display ="none";
+  }
+   if (check2.checked == true){
+    sum+=5;
+    document.getElementById("s1").innerHTML ="Archaeological Site Museum,Dholavira";
+    document.getElementById("s1").style.display ="inline";
+    document.getElementById("id2").style.display ="inline";
+    document.getElementById("dov2").style.display ="inline";
+   }
+    else {
+     document.getElementById("s1").style.display = "none";
+     document.getElementById("dov2").style.display ="none";
+     document.getElementById("id2").style.display ="none";
+  }
+  if (check3.checked == true){
+    sum+=2;
+     document.getElementById("s2").innerHTML ="Archaeological Site Museum,Lothal";
+    document.getElementById("s2").style.display ="inline";
+    document.getElementById("idd3").style.display ="inline";
+    document.getElementById("dov3").style.display ="inline";
+   }
+    else {
+     document.getElementById("s2").style.display = "none";
+     document.getElementById("dov3").style.display ="none";
+     document.getElementById("idd3").style.display ="none";
+  }
+
+  if (check4.checked == true){
+    sum+=20;
+     document.getElementById("s3").innerHTML ="Baba Pyare, Khaprakodia Caves";
+    document.getElementById("s3").style.display ="inline";
+    document.getElementById("id4").style.display ="inline";
+    document.getElementById("dov4").style.display ="inline";
+   }
+    else {
+     document.getElementById("s3").style.display = "none";
+     document.getElementById("dov4").style.display ="none";
+     document.getElementById("id4").style.display ="none";
+  }
+
+  if (check5.checked == true){
+    sum+=25;
+     document.getElementById("s4").innerHTML ="Buddhish Caves, Junagadh";
+    document.getElementById("s4").style.display ="inline";
+    document.getElementById("id5").style.display ="inline";
+    document.getElementById("dov5").style.display ="inline";
+   }
+    else {
+     document.getElementById("s4").style.display = "none";
+     document.getElementById("dov5").style.display ="none";
+     document.getElementById("id5").style.display ="none";
+  }
+  if (check6.checked == true){
+    sum+=5;
+     document.getElementById("s5").innerHTML ="Champaner Monumnets";
+    document.getElementById("s5").style.display ="inline";
+    document.getElementById("id6").style.display ="inline";
+    document.getElementById("dov6").style.display ="inline";
+   }
+    else {
+     document.getElementById("s5").style.display = "none";
+     document.getElementById("dov6").style.display ="none";
+     document.getElementById("id6").style.display ="none";
+  }
+  if (check7.checked == true){
+    sum+=5;
+     document.getElementById("s6").innerHTML ="Rani Ka-Vav";
+    document.getElementById("s6").style.display ="inline";
+    document.getElementById("id7").style.display ="inline";
+    document.getElementById("dov7").style.display ="inline";
+   }
+    else {
+     document.getElementById("s6").style.display = "none";
+     document.getElementById("dov7").style.display ="none";
+     document.getElementById("id7").style.display ="none";
+  }
+  if (check8.checked == true){
+    sum+=25;
+     document.getElementById("s7").innerHTML ="Rudabai Step Well";
+    document.getElementById("s7").style.display ="inline";
+    document.getElementById("id8").style.display ="inline";
+    document.getElementById("dov8").style.display ="inline";
+   }
+    else {
+     document.getElementById("s7").style.display = "none";
+     document.getElementById("dov8").style.display ="none";
+     document.getElementById("id8").style.display ="none";
+  }
+
+  if (check9.checked == true){
+    sum+=20;
+     document.getElementById("s8").innerHTML ="Modhera Sun Temple";
+    document.getElementById("s8").style.display ="inline";
+    document.getElementById("id9").style.display ="inline";
+    document.getElementById("dov9").style.display ="inline";
+   }
+    else {
+     document.getElementById("s8").style.display = "none";
+     document.getElementById("dov9").style.display ="none";
+     document.getElementById("id9").style.display ="none";
+  }
+
+  sum=sum*x;
+  document.getElementById("totalsum").innerHTML =sum;
+
+
+}
+</script>
+<form ng-app="myApp" ng-controller="validateCtrl" name="myForm" novalidate>
+
+<p id="name">Enter Name:<br>
+<input type="text" name="user" placeholder="Enter Name" ng-model="user" required>
+<span id="nameerror" style="color:#54e346" ng-show="myForm.user.$dirty && myForm.user.$invalid">
+<span ng-show="myForm.user.$error.required">Username is required.</span>
+</span>
+</p>
+
+<p id="email">Email:<br>
+<input type="email" name="email" placeholder="Enter Email" ng-model="email" required>
+<span style="color:#54e346" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+<span id="emailerror" ng-show="myForm.email.$error.required">Email is required.</span>
+<span id="emailerror" ng-show="myForm.email.$error.email">Invalid email address.</span>
+</span>
+</p>
+<p>
+
+<input type="button" id="btn" value="Click to Book" onclick="confirm()"
+ng-disabled="myForm.user.$dirty && myForm.user.$invalid ||
+myForm.email.$dirty && myForm.email.$invalid">
+
+<input type="button" id="btnnew" value="Next" onclick="confirm()"
+ng-disabled="myForm.user.$dirty && myForm.user.$invalid ||
+myForm.email.$dirty && myForm.email.$invalid">
+</p>
+
+</form>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('validateCtrl', function($scope) {
+    $scope.user = '';
+    $scope.email = '';
+});
+
+function confirm()
+{
+  alert("Your Bookings are Confirmed.Thank You for Visiting Gujarat!!");
+}
+
+document.getElementById("btnnew").onclick = function () {
+        location.href = "http://localhost:2000/";
+    };
+</script>
+
+<div id="iframeHolder">
+  <div id="lc"></div>
+</div>
+<input type="image" src="lc8.png" id="button" alt="Submit" width="125" height="125">
+<script type="text/javascript">
+  $(function(){
+      $('#button').click(function(){ 
+          if(!$('#iframe').length) {
+                  
+                  $('#iframeHolder').html('<iframe id="iframe" src="http://localhost:8000" width="300" height="300"></iframe>');
+          }
+      });   
+  });
+  </script>
+
+
+</body>
+</html>

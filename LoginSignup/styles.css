@@ -1,0 +1,49 @@
+#div{
+    border:2px solid coral;
+    height:300px;
+    width:400px;
+    padding-left:1%;
+    padding-top:50px;
+    margin-top: 40px;
+    margin-left:450px;
+}
+h1{
+    color:coral;
+    margin-top:2%;
+
+}
+
+#login,#signup{
+    color: coral;
+    font-weight: bold;
+}
+
+#already{
+    margin-left: 65px;
+    margin-top: 20px;
+    font-weight: bold;
+    
+}
+
+#name,#mail,#num,#pwd{
+    font-weight:bold;
+    font-size: medium;;
+    font-style: italic;
+    
+}
+
+#btn{
+    margin-left:36%;
+    margin-top:10%;
+    font-size: medium;
+    font-weight: bold;
+    background-color: coral;
+    width:80px;
+    height:30px;
+}
+#uns{
+    font-weight:bold;
+    font-style: italic;
+    color: crimson;
+    font-size: 18px;
+}

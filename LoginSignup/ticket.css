@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+  
+  }
+  
+  
+  .column3{
+    padding-left:25px;
+    float: left;
+    width: 30%;
+    padding-right: 10px;
+    margin-left:30px;
+    margin-right:15px;
+    margin-top: 15px;
+    height: 300px;
+  
+  }
+  .column1{
+    float: left;
+    width: 30%;
+    padding-right: 10px;
+    margin:15px;
+    height: 300px;
+    padding-left:25px;
+  
+  }
+  
+  .column2{
+    float: left;
+    width: 30%;
+    padding-right: 10px;
+    margin:15px;
+    height: 300px;
+    padding-left:25px;
+    overflow:auto;
+  
+  }
+  .row{
+  
+      background:black;
+      background: rgba(0, 0,0,0.3)
+  
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #heading{
+    padding-bottom:40px;
+    color:white;
+  }
+
+  #totalsum{
+    background-color: transparent;
+    border:none;
+    color: white;
+    font-weight: bold;
+  }
+  #visitor,#monum,#date3{
+    padding-left:2px;
+    font-size:25px;
+    color:white;
+    font-weight:bold;
+  }
+  #ad,#ch{
+    padding-left:5px;
+    padding-bottom:5px;
+    color:white;
+    font-size:15px;
+  }
+  
+  
+  #cost{
+    padding-left:5px;
+    font-size:15px;
+    font-weight:bold;
+    color:white;
+  
+  }
+  #d1{
+    margin-bottom:5px;
+  }
+  body{
+    background-image:url("tent1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  #name,#email{
+    color:white;
+    margin-left:40%;
+    font-weight:bold;
+  }
+  
+  #btn{
+    margin-left:41%;
+  }
+  
+  #nameerror,#emailerror{
+    font-weight:bold;
+  }
+  #pl1{
+     padding-left:5px;
+     padding-bottom:5px;
+     font-size:16px;
+     color:white;
+  
+  }
+  #s,#s1,#s2,#s3,#s4,#s5,#s6,#s7,#s8{
+    color:white;
+    font-size:18px;
+  }
+  
+  #id1,#id2,#idd3,#id4,#id5,#id6,#id7,#id8,#id9{
+    color:white;
+    padding-right:5px;
+  }
+  
+  #dov1,#dov2,#dov3,#dov4,#dov5,#dov6,#dov7,#dov8,#dov9{
+    margin-bottom:8px;
+  }
+  
+  #note1{
+    color:#da9ff9;
+    font-size:20px;
+    font-weight:bold;
+  }
+#button{
+    margin-top:-100px;
+    margin-left: 90%;
+    position:relative;
+  }
+  #iframeHolder{
+    margin-left:70%;
+  border:0px;
+  
+  
+  }
